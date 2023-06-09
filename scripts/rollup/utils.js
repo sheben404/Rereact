@@ -5,7 +5,7 @@ import ts from 'rollup-plugin-typescript2';
 import cjs from '@rollup/plugin-commonjs';
 
 const pkgPath = path.resolve(__dirname, '../../packages');
-const distPath = path.resolve(__dirname, '../../dist');
+const distPath = path.resolve(__dirname, '../../dist/node_modules');
 
 export function resolvePkgPath(pkgName, isDist) {
 	if (isDist) {
